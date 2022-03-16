@@ -1,0 +1,69 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1647282937,
+        "narHash": "sha256-K8Oo6QyFCfiEWTRpQVfzcwI3YNMKlz6Tu8rr+o3rzRQ=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "64fc73bd74f04d3e10cb4e70e1c65b92337e76db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-21.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-shim-images": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647446752,
+        "narHash": "sha256-chzipDrWoTbQtDdcNMASuUcw+TXQRNZ1S4tM8iAFgsM=",
+        "owner": "rehno-lindeque",
+        "repo": "nixpkgs-shim-images",
+        "rev": "f747aabeb560dfd3970d9864dd9cabb187f8ce80",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rehno-lindeque",
+        "repo": "nixpkgs-shim-images",
+        "type": "github"
+      }
+    },
+    "nixpkgs-shim-profiles": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1647458553,
+        "narHash": "sha256-dUFqgmNYqB8RlPMJX30U2TAehAhdB3QyLY7udba+9YA=",
+        "owner": "rehno-lindeque",
+        "repo": "nixpkgs-shim-profiles",
+        "rev": "43ed67b90a86a1be86da334ed9178b08fe1bceb0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rehno-lindeque",
+        "repo": "nixpkgs-shim-profiles",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-shim-images": "nixpkgs-shim-images",
+        "nixpkgs-shim-profiles": "nixpkgs-shim-profiles"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
