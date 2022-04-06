@@ -3,9 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-21.11";
-    nixpkgs-shim-images.url = "github:rehno-lindeque/nixpkgs-shim-images";
+    nixpkgs-shim-images.url = "path:./nixpkgs-shim-images";
     nixpkgs-shim-images.inputs.nixpkgs.follows = "nixpkgs";
-    nixpkgs-shim-profiles.url = "github:rehno-lindeque/nixpkgs-shim-profiles";
+    nixpkgs-shim-profiles.url = "path:./nixpkgs-shim-profiles";
     nixpkgs-shim-profiles.inputs.nixpkgs.follows = "nixpkgs";
   };
 

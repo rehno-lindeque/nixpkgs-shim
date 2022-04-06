@@ -23,17 +23,13 @@
         ]
       },
       "locked": {
-        "lastModified": 1647446752,
         "narHash": "sha256-chzipDrWoTbQtDdcNMASuUcw+TXQRNZ1S4tM8iAFgsM=",
-        "owner": "rehno-lindeque",
-        "repo": "nixpkgs-shim-images",
-        "rev": "f747aabeb560dfd3970d9864dd9cabb187f8ce80",
-        "type": "github"
+        "path": "./nixpkgs-shim-images",
+        "type": "path"
       },
       "original": {
-        "owner": "rehno-lindeque",
-        "repo": "nixpkgs-shim-images",
-        "type": "github"
+        "path": "./nixpkgs-shim-images",
+        "type": "path"
       }
     },
     "nixpkgs-shim-profiles": {
@@ -43,17 +39,13 @@
         ]
       },
       "locked": {
-        "lastModified": 1647458553,
         "narHash": "sha256-dUFqgmNYqB8RlPMJX30U2TAehAhdB3QyLY7udba+9YA=",
-        "owner": "rehno-lindeque",
-        "repo": "nixpkgs-shim-profiles",
-        "rev": "43ed67b90a86a1be86da334ed9178b08fe1bceb0",
-        "type": "github"
+        "path": "./nixpkgs-shim-profiles",
+        "type": "path"
       },
       "original": {
-        "owner": "rehno-lindeque",
-        "repo": "nixpkgs-shim-profiles",
-        "type": "github"
+        "path": "./nixpkgs-shim-profiles",
+        "type": "path"
       }
     },
     "root": {
