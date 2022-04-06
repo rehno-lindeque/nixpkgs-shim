@@ -18,12 +18,18 @@
   }:
     nixpkgs
     // {
-      nixosModules =
-        # The modules that ship with nixpkgs
+      nixosModules = let
+        shimModules =
+          # Image building modules defined inside nixpkgs
+          nixpkgs-shim-images.nixosModules
+          # Profile modules defined inside nixpkgs
+          // nixpkgs-shim-profiles.nixosModules;
+      in
+        # The modules that ship with nixpkgs directly (re-exported)
         nixpkgs.nixosModules
-        # Image building modules defined inside nixpkgs
-        // nixpkgs-shim-images.nixosModules
-        # Profile modules defined inside nixpkgs
-        // nixpkgs-shim-profiles.nixosModules;
+        // shimModules
+        // {
+          default = {imports = builtins.attrValues shimModules;};
+        };
     };
 }
