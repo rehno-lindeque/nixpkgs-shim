@@ -7,6 +7,8 @@
     nixpkgs-shim-images.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-shim-profiles.url = "path:./nixpkgs-shim-profiles";
     nixpkgs-shim-profiles.inputs.nixpkgs.follows = "nixpkgs";
+    nixpkgs-shim-modules.url = "path:./nixpkgs-shim-modules";
+    nixpkgs-shim-modules.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -14,14 +16,17 @@
     nixpkgs,
     nixpkgs-shim-images,
     nixpkgs-shim-profiles,
+    nixpkgs-shim-modules,
     ...
   }:
     nixpkgs
     // {
       nixosModules = let
         shimModules =
+          # Regular NixOS modules defined inside nixpkgs (but not exported by nixpkgs)
+          nixpkgs-shim-modules.nixosModules
           # Image building modules defined inside nixpkgs
-          nixpkgs-shim-images.nixosModules
+          // nixpkgs-shim-images.nixosModules
           # Profile modules defined inside nixpkgs
           // nixpkgs-shim-profiles.nixosModules;
       in

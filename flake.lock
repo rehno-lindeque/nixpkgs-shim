@@ -32,6 +32,22 @@
         "type": "path"
       }
     },
+    "nixpkgs-shim-modules": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "narHash": "sha256-167sNL43ZhTAR9B4MsT5Vw3hiRivbs4TRVgzLEtKMGU=",
+        "path": "./nixpkgs-shim-modules",
+        "type": "path"
+      },
+      "original": {
+        "path": "./nixpkgs-shim-modules",
+        "type": "path"
+      }
+    },
     "nixpkgs-shim-profiles": {
       "inputs": {
         "nixpkgs": [
@@ -52,6 +68,7 @@
       "inputs": {
         "nixpkgs": "nixpkgs",
         "nixpkgs-shim-images": "nixpkgs-shim-images",
+        "nixpkgs-shim-modules": "nixpkgs-shim-modules",
         "nixpkgs-shim-profiles": "nixpkgs-shim-profiles"
       }
     }
