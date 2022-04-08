@@ -15,8 +15,10 @@ in {
     # Conditionally import the image module
     (args @ {pkgs, ...}: let
       module = import "${flake.inputs.nixpkgs}/nixos/modules/installer/cd-dvd/iso-image.nix" args;
-      config = lib.mkIf cfg.enable module.config;
     in
-      module // {inherit config;})
+    module // {
+      options.images.isoImage = module.options.isoImage;
+      config = lib.mkIf cfg.enable module.config;
+    })
   ];
 }

@@ -14,9 +14,11 @@ in {
   imports = [
     # Conditionally import the image module
     (args @ {pkgs, ...}: let
-      module = builtins.removeAttrs (import "${flake.inputs.nixpkgs}/nixos/modules/installer/sd-card/sd-image.nix" args) ["imports"];
-      config = lib.mkIf cfg.enable module.config;
+      module = import "${flake.inputs.nixpkgs}/nixos/modules/installer/sd-card/sd-image.nix" args;
     in
-      module // {inherit config;})
+    {
+      options.images.sdImage = module.options.sdImage;
+      config = lib.mkIf cfg.enable module.config;
+    })
   ];
 }
