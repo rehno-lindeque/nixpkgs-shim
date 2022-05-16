@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1647282937,
-        "narHash": "sha256-K8Oo6QyFCfiEWTRpQVfzcwI3YNMKlz6Tu8rr+o3rzRQ=",
+        "lastModified": 1652559422,
+        "narHash": "sha256-jPVTNImBTUIFdtur+d4IVot6eXmsvtOcBm0TzxmhWPk=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "64fc73bd74f04d3e10cb4e70e1c65b92337e76db",
+        "rev": "8b3398bc7587ebb79f93dfeea1b8c574d3c6dba1",
         "type": "github"
       },
       "original": {
@@ -23,7 +23,8 @@
         ]
       },
       "locked": {
-        "narHash": "sha256-chzipDrWoTbQtDdcNMASuUcw+TXQRNZ1S4tM8iAFgsM=",
+        "lastModified": 1,
+        "narHash": "sha256-ESgwSza2h+/CHMYaD7V/7eU+hOd7e745NkCjsHClIFg=",
         "path": "./nixpkgs-shim-images",
         "type": "path"
       },
@@ -39,6 +40,7 @@
         ]
       },
       "locked": {
+        "lastModified": 1,
         "narHash": "sha256-167sNL43ZhTAR9B4MsT5Vw3hiRivbs4TRVgzLEtKMGU=",
         "path": "./nixpkgs-shim-modules",
         "type": "path"
@@ -55,7 +57,8 @@
         ]
       },
       "locked": {
-        "narHash": "sha256-dUFqgmNYqB8RlPMJX30U2TAehAhdB3QyLY7udba+9YA=",
+        "lastModified": 1,
+        "narHash": "sha256-tFZ2JgxEgyRXuWhMKXwRr9x9cyf6tcHeG0ioJaQqHzY=",
         "path": "./nixpkgs-shim-profiles",
         "type": "path"
       },
